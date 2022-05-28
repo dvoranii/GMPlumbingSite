@@ -1,0 +1,9 @@
+#json objects
+*.json
+
+#Node artifat files
+node_modules/
+dist/
+
+#vs code folder 
+.vscode/

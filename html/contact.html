@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/general-styles.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+    <script defer src="/models/services-model.json"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"
+    ></script>
+    <script defer src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="/js/app.js"></script>
+    <script defer src="/js/formSubmit.js"></script>
+    <title>Services</title>
+  </head>
+  <body>
+    <div class="background">
+      <nav class="header container-3">
+        <a href="/index.html" class="logo-link">
+          <div class="logo-container">
+            <h1 class="logo-text">
+              <span class="gm" style="letter-spacing: 2px">GM</span
+              ><span style="padding-left: 0.4rem">Plumbing</span>
+            </h1>
+          </div>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/html/services.html">Services</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/html/projects.html">Projects</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/html/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1">&nbsp;</div>
+          <div class="line2">&nbsp;</div>
+          <div class="line3">&nbsp;</div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="contact-form container">
+      <h1 class="heading-tertiary estimate-title">Get in Touch</h1>
+      <div class="success-container">
+        <div class="success">Message successfully sent!</div>
+      </div>
+      <form method="POST" action="" class="form" id="contactForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name*"
+          class="form-input name"
+          id="name"
+        />
+        <p class="name-error">*Please enter your name</p>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email*"
+          class="form-input email"
+          id="email"
+        />
+        <p class="errorEmail">*Please enter an email address</p>
+
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone*"
+          class="form-input phone"
+          id="phone"
+        />
+        <p class="phoneError">*Please enter a valid phone number</p>
+
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Let us know how we can help"
+          class="form-input message"
+          id="message"
+        ></textarea>
+
+        <input type="submit" class="submit-btn" />
+      </form>
+    </section>
+
+    <section class="footer">
+      <div class="footer-container container">
+        <div class="footer-content grid grid--3--cols">
+          <ul class="footer-1">
+            <p class="footer-heading">Services</p>
+            <li class="footer-item">service 1</li>
+            <li class="footer-item">service 2</li>
+            <li class="footer-item">service 3</li>
+          </ul>
+          <ul class="footer-2">
+            <p class="footer-heading">Navigation</p>
+            <li class="footer-item">service 1</li>
+            <li class="footer-item">service 2</li>
+            <li class="footer-item">service 3</li>
+          </ul>
+          <ul class="footer-3">
+            <p class="footer-heading">Contact Info</p>
+            <li class="footer-item">service 1</li>
+            <li class="footer-item">service 2</li>
+            <li class="footer-item">service 3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="overlay"></div>
+  </body>
+</html>
