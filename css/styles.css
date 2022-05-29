@@ -58,6 +58,7 @@ nav {
   display: flex;
   justify-content: space-around;
   margin-top: 1.2rem;
+  gap: 1.2rem;
   /* display: none; */
 }
 
@@ -76,6 +77,15 @@ nav {
 .nav-list-item a:hover {
   box-shadow: 0px 1px 0px 0px #fcfcfcd2;
   opacity: 0.95;
+}
+
+#current {
+  box-shadow: 0px 1px 0px 0px #fcfcfcd2;
+}
+
+#current:hover {
+  box-shadow: 0px 1px 0px 0px #fcfcfcc7;
+  color: #ffffffe3;
 }
 
 .burger div {
@@ -105,19 +115,28 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.triangle {
+  position: absolute;
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
 /* Hero Section */
 
 .hero {
-  height: 40vh;
   background-image: url("/img/rename.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .hero-intro-content {
   grid-column: 2;
-  padding-right: 20px;
-  margin-top: 7vh;
+  padding: 9.6rem 0 9.6rem 0;
+  align-self: center;
 }
 
 .hero-title {
@@ -198,6 +217,12 @@ nav {
   gap: 3.2rem;
 }
 
+/* .service-container {
+  height: 0;
+  padding-top: 56.25%;
+  background: url("");
+} */
+
 .services-grid .service {
   transition: all 150ms ease;
 }
@@ -209,8 +234,20 @@ nav {
 
 .service-img {
   width: 100%;
+  /* max-width: 362px;
+  max-height: 240px; */
   transition: all 150ms ease;
 }
+
+/* .current-img {
+  max-width: 1400px;
+  max-height: auto;
+} */
+
+/* .service1 {
+  aspect-ratio: 400/257;
+
+} */
 
 .service-img:hover {
   filter: brightness(0.5);
@@ -674,4 +711,23 @@ nav {
 /* PROJECT */
 .project-container {
   padding: 8rem 4.8rem 2.4rem 4.8rem;
+}
+
+.gallery-container {
+  max-width: 1400px;
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.gallery-item {
+  max-width: 290px;
+  width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 500ms ease;
+}
+.gallery-item:hover {
+  cursor: pointer;
+  filter: grayscale(0);
 }

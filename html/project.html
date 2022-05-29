@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/general-styles.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+    <script defer src="/js/lightbox-plus-jquery.min.js"></script>
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"
@@ -14,7 +16,7 @@
   <script defer src=" https://smtpjs.com/v3/smtp.js"></script>
   <script defer src="/js/app.js"></script>
     <script defer src="/js/formSubmit.js"></script>
-    <script defer src="/js/project.js"></script>
+    <script defer src="/js/projects.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -53,7 +55,21 @@
     <div class="layout container-2">
         <div class="project-container">
             <h2  class="heading-secondary">Project Title</h2>
-            <img class="service-img" src="/img/commercial-plumbing.jpg" alt="">
+           <a href="/img/commercial-plumbing.avif"  data-lightbox="my-gallery"><img class="service-img current-img" src="/img/commercial-plumbing.avif" alt=""></a> 
+            <div class="gallery-container">
+              <div class="item-container">
+             <a href="/img/bathroom.avif" data-lightbox="my-gallery"><img class="gallery-item" src="/img/bathroom.avif" alt=""></a>   
+              </div>
+              <div class="item-container">
+                <a href="/img/glueing-pipe.avif" data-lightbox="my-gallery"><img class="gallery-item" src="/img/glueing-pipe.avif" alt=""></a>
+              </div>
+              <div class="item-container">
+               <a href="/img/sink.avif" data-lightbox="my-gallery"><img class="gallery-item" src="/img/sink.avif" alt=""></a>
+              </div>
+              <div class="item-container">
+              <a href="/img/water-pipes.jpg" data-lightbox="my-gallery"><img class="gallery-item" src="/img/water-pipes.avif" alt=""></a>  
+              </div>
+            </div>
             <p><span class="bold">Location:</span> Etobicoke, ON</p>
             <p><span class="bold">Date:</span> 2022-03-04</p>
             <p class="bold">Description:</p>
