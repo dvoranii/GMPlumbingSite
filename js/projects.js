@@ -105,8 +105,10 @@ function paginate(listItem, container) {
 
 getProjects("/models/projects-model.json");
 
-function getServicesSidebar(url) {
-  let container = document.querySelector(".sidebar-services");
+let container = document.querySelector(".sidebar-services");
+
+function getServicesSidebar(url, container) {
+  if (!container) return;
   fetch(url)
     .then((res) => {
       return res.json();
@@ -133,4 +135,4 @@ function getServicesSidebar(url) {
     });
 }
 
-getServicesSidebar("/models/services-model.json");
+getServicesSidebar("/models/services-model.json", container);

@@ -96,9 +96,10 @@ function paginate(listItems, container) {
 getServices("/models/services-model.json");
 
 // SERVICE PAGE
+let container2 = document.querySelector(".sidebar-projects");
 
-function getProjectsSidebar(url) {
-  let container2 = document.querySelector(".sidebar-projects");
+function getProjectsSidebar(url, container) {
+  if (!container) return;
   fetch(url)
     .then((res) => {
       return res.json();
@@ -121,10 +122,10 @@ function getProjectsSidebar(url) {
           <br/>
           `;
         if (count <= 3) {
-          container2.innerHTML += sidebarTemplate2;
+          container.innerHTML += sidebarTemplate2;
         }
       });
     });
 }
 
-getProjectsSidebar("/models/projects-model.json");
+getProjectsSidebar("/models/projects-model.json", container2);
