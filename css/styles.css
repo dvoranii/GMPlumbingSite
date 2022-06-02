@@ -192,7 +192,6 @@ nav {
   justify-content: space-around;
   margin-top: 1.2rem;
   gap: 1.2rem;
-  /* display: none; */
 }
 
 .nav-list li:hover > .services-dropdown li {
@@ -210,27 +209,27 @@ nav {
 
 /* animation dropdown */
 .nav-list li:hover > .services-dropdown li:nth-child(1) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: -100ms;
 }
 .nav-list li:hover > .services-dropdown li:nth-child(2) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: 0ms;
 }
 .nav-list li:hover > .services-dropdown li:nth-child(3) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: 100ms;
 }
 .nav-list li:hover > .services-dropdown li:nth-child(4) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: 200ms;
 }
 .nav-list li:hover > .services-dropdown li:nth-child(5) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: 300ms;
 }
 .nav-list li:hover > .services-dropdown li:nth-child(6) {
-  animation: animate 300ms ease-in-out forwards;
+  animation: animate 350ms ease-in-out forwards;
   animation-delay: 400ms;
 }
 
@@ -279,6 +278,11 @@ nav {
   color: #fff;
   background-color: #004e8a;
   transition: all 150ms ease;
+  margin-left: -4px;
+}
+
+.services-dropdown li:nth-child(1) {
+  padding-top: 2.4rem;
 }
 .services-dropdown li:hover {
   cursor: pointer;

@@ -43,6 +43,7 @@ function paginate(listItems, container) {
   let rows = 6;
 
   function DisplayServices(items, wrapper, rows_per_page, page) {
+    if (!wrapper) return;
     wrapper.innerHTML = "";
     page--;
 
@@ -61,6 +62,7 @@ function paginate(listItems, container) {
   }
 
   function SetupPagination(items, wrapper, rows_per_page) {
+    if (!wrapper) return;
     wrapper.innerHTML = "";
 
     let page_count = Math.ceil(items.length / rows_per_page);

@@ -30,11 +30,13 @@ const navSlide = () => {
 };
 navSlide();
 
-// darken background
-
 // Projects slider
 
+let slideContainer = document.querySelector(".slider");
+
 const slider = function () {
+  if (!slideContainer) return;
+
   const slides = document.querySelectorAll(".slide");
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
