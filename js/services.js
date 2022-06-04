@@ -14,15 +14,14 @@ function getServices(url) {
       return res.json();
     })
     .then((data) => {
-      let arrLength = data.Services.length;
-      for (let i = 0; i < arrLength; i++) {
+      for (let i = 0; i < data.length; i++) {
         html = `
       <div class="service-container">
-      <a href="${data.Services[1].url}"><img class="service-img" src="/img/${data.Services[i].img}" alt="" /></a>
+      <a href="${data[i].url}"><img class="service-img" src="/img/${data[i].img}" alt="" /></a>
       <div class="service-text">
-      <p class="heading-tertiary service-title">${data.Services[i].name}</p>
+      <p class="heading-tertiary service-title">${data[i].name}</p>
       <p class="service-description">
-      ${data.Services[i].description}
+      ${data[i].description}
       </p>
       </div>
       </div>
@@ -107,7 +106,7 @@ function getProjectsSidebar(url, container) {
       return res.json();
     })
     .then((data) => {
-      let arr = Object.entries(data.Projects);
+      let arr = Object.entries(data);
 
       let count = 0;
 

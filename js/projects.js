@@ -13,7 +13,7 @@ function getProjects(url) {
       return res.json();
     })
     .then((data) => {
-      let arrLength = data.Projects;
+      let arrLength = data;
       arrLength.forEach((project) => {
         html2 = `
         <div class="service-container">
@@ -116,7 +116,7 @@ function getServicesSidebar(url, container) {
       return res.json();
     })
     .then((data) => {
-      let arr = Object.entries(data.Services);
+      let arr = Object.entries(data);
 
       let count = 0;
       arr.forEach((service) => {
